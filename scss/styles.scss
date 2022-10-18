@@ -11,37 +11,25 @@ body{
     background-repeat: no-repeat;
 }
 .container{
-    margin: 50px auto 20px auto;
     width: 90%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     gap: 20px;
-    max-width: 1500px;
 }
 .info_container{
-    width: 60%;
     .logos{
         display: flex;
         width: 100%;
-        justify-content: flex-start;
-        flex-direction: row;
-        align-items: center;
         gap: 10px;
         #gameMax_logo{
             width: 100%;
-            max-width: 300px;
         }
         #airComputers_logo{
-            width: 100%;
-            max-width: 100px;
-          
+            width: 100%;          
         }
     }
 }
 
 .soon_container{
-    margin: 15px auto 15px 29px;
     h1{
         font-size: 25px;
         font-weight: 500;
@@ -50,7 +38,6 @@ body{
 }
 
 .work_container{
-    margin: 0 auto 15px 29px;
     h2{
         font-size: 40px;
         font-weight: 700;
@@ -59,7 +46,6 @@ body{
 }
 
 .slogan_container{
-    margin: 0 auto 30px 29px;
     p{
         font-family: 'Inter', sans-serif;
         font-size: 16px;
@@ -69,7 +55,6 @@ body{
     }
 }
 .form{
-    margin: 0 auto 20px 29px;
     p{
         font-family: 'Inter', sans-serif;
         font-size: 18px;
@@ -77,15 +62,12 @@ body{
         color: #70BA2B;
     }
     input[type=email]{
-        max-width: 520px;
         width: 100%;
         height: 47px;
         border-radius: 10px;
         background-color: #474747;
         color: #000;
         border: none !important;
-        padding-left: 20px;
-        padding-right: 20px;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
     }
@@ -97,7 +79,6 @@ body{
     }
     button[type=submit]{
         border: none;
-        width: 180px;
         height: 47px;
         border-radius: 10px;
         cursor: pointer;
@@ -113,15 +94,10 @@ body{
     }
     form{
         display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-        align-items: center;
-        flex-direction: row;
     }
 }
 
 .img_container{
-    width: 40%;
     position: relative;
     display: flex;
     align-items: center;
@@ -131,4 +107,103 @@ body{
         margin: auto;
     }
 
+}
+
+@media only screen and (min-width: 300px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px auto 20px auto;
+    }
+    .info_container{
+        width: 100%;
+        .logos{
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            #gameMax_logo{
+                max-width: 210px;
+            }
+            #airComputers_logo{
+                max-width: 80px;
+              
+            }
+        }
+    }
+    input[type=email]{
+        max-width: 97%;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    button[type=submit]{
+        width: 100%;
+    }
+    form{
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img_container{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .container{
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 1500px;
+        
+    }
+
+    .info_container{
+        width: 60%;
+        .logos{
+            justify-content: flex-start;
+            #gameMax_logo{
+                max-width: 300px;
+            }
+            #airComputers_logo{
+                max-width: 100px;
+              
+            }
+        }
+    }
+    input[type=email]{
+        max-width: 520px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    button[type=submit]{
+        width: 180px;
+    }
+    form{
+        justify-content: flex-start;
+        gap: 30px;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto 20px 29px;
+    }
+
+    .img_container{
+        width: 40%;
+    }
+    .slogan_container{
+        margin: 0 auto 30px 29px;
+    }
+    .work_container{
+        margin: 0 auto 15px 29px;
+    }
+    .soon_container{
+        margin: 15px auto 15px 29px;
+    }
+    .form{
+        p{
+            margin-left: 29px;
+        }
+    }
 }

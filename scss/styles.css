@@ -11,24 +11,11 @@ body {
 }
 
 .container {
-  margin: 50px auto 20px auto;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   gap: 20px;
-  max-width: 1500px;
-}
-
-.info_container {
-  width: 60%;
 }
 
 .info_container .logos {
@@ -36,31 +23,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
 }
 
 .info_container .logos #gameMax_logo {
   width: 100%;
-  max-width: 300px;
 }
 
 .info_container .logos #airComputers_logo {
   width: 100%;
-  max-width: 100px;
-}
-
-.soon_container {
-  margin: 15px auto 15px 29px;
 }
 
 .soon_container h1 {
@@ -69,18 +40,10 @@ body {
   line-height: 47.2px;
 }
 
-.work_container {
-  margin: 0 auto 15px 29px;
-}
-
 .work_container h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-}
-
-.slogan_container {
-  margin: 0 auto 30px 29px;
 }
 
 .slogan_container p {
@@ -91,10 +54,6 @@ body {
   line-height: 33.89px;
 }
 
-.form {
-  margin: 0 auto 20px 29px;
-}
-
 .form p {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -103,15 +62,12 @@ body {
 }
 
 .form input[type=email] {
-  max-width: 520px;
   width: 100%;
   height: 47px;
   border-radius: 10px;
   background-color: #474747;
   color: #000;
   border: none !important;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
 }
@@ -138,7 +94,6 @@ body {
 
 .form button[type=submit] {
   border: none;
-  width: 180px;
   height: 47px;
   border-radius: 10px;
   cursor: pointer;
@@ -158,21 +113,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .img_container {
-  width: 40%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,5 +131,129 @@ body {
 .img_container img {
   width: 100%;
   margin: auto;
+}
+
+@media only screen and (min-width: 300px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px auto 20px auto;
+  }
+  .info_container {
+    width: 100%;
+  }
+  .info_container .logos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info_container .logos #gameMax_logo {
+    max-width: 210px;
+  }
+  .info_container .logos #airComputers_logo {
+    max-width: 80px;
+  }
+  input[type=email] {
+    max-width: 97%;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  button[type=submit] {
+    width: 100%;
+  }
+  form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img_container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    max-width: 1500px;
+  }
+  .info_container {
+    width: 60%;
+  }
+  .info_container .logos {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .info_container .logos #gameMax_logo {
+    max-width: 300px;
+  }
+  .info_container .logos #airComputers_logo {
+    max-width: 100px;
+  }
+  input[type=email] {
+    max-width: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  button[type=submit] {
+    width: 180px;
+  }
+  form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto 20px 29px;
+  }
+  .img_container {
+    width: 40%;
+  }
+  .slogan_container {
+    margin: 0 auto 30px 29px;
+  }
+  .work_container {
+    margin: 0 auto 15px 29px;
+  }
+  .soon_container {
+    margin: 15px auto 15px 29px;
+  }
+  .form p {
+    margin-left: 29px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
