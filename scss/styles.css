@@ -8,7 +8,7 @@ body {
   background-image: url(../images/landing_background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center right;
 }
 
 .container {
