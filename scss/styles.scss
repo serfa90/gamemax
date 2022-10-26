@@ -6,10 +6,10 @@ h1, h2{
 }
 
 body{
-    background-image: url(../images/landing_background.png);
+    background-image: url('../images/background-gamemax.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center top;
 }
 .container{
     width: 90%;
@@ -162,7 +162,7 @@ body{
     }
 
     .info_container{
-        width: 60%;
+        width: 50%;
         .logos{
             justify-content: flex-start;
             #gameMax_logo{
@@ -191,7 +191,10 @@ body{
     }
 
     .img_container{
-        width: 40%;
+        width: 50%;
+        img{
+            margin-top: 120px;
+        }
     }
     .slogan_container{
         margin: 0 auto 30px 29px;

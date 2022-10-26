@@ -5,10 +5,10 @@ h1, h2 {
 }
 
 body {
-  background-image: url(../images/landing_background.png);
+  background-image: url("../images/background-gamemax.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center top;
 }
 
 .container {
@@ -206,7 +206,7 @@ body {
     max-width: 1500px;
   }
   .info_container {
-    width: 60%;
+    width: 50%;
   }
   .info_container .logos {
     -webkit-box-pack: start;
@@ -242,7 +242,10 @@ body {
     margin: 0 auto 20px 29px;
   }
   .img_container {
-    width: 40%;
+    width: 50%;
+  }
+  .img_container img {
+    margin-top: 120px;
   }
   .slogan_container {
     margin: 0 auto 30px 29px;
